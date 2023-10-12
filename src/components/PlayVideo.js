@@ -18,7 +18,7 @@ const PlayVideo = ({LatestReleasesData, popularshows, superheroes}) => {
           className='md:w-screen md:h-full w-auto h-full object-cover'
           controls={true}
         >
-          <source src={singleItem.videos} type='video/mp4' />
+          <source src={singleItem.videos()} type='video/mp4' />
         </video>
       ))}
     </div>
