@@ -1,12 +1,9 @@
 import React from 'react';
-import LatestReleases from './LatestReleases';
-import { Routes, Route } from 'react-router-dom';
-import Testimonials from './Testimonials';
-import LatestReleasesPage from './LatestReleasesPage';
-import PopularShows from './PopularShows';
-import DPMSHS from './DPMSHS';
-import BestOfsuperheroes from './BestOfsuperheroes';
-import TestimonialsBtn from './TestimonialsBtn';
+import LatestReleases from './latestreleases/LatestReleases';
+import Testimonials from './testimonials/Testimonials';
+import PopularShows from './popularshows/PopularShows';
+import DPMSHS from './viewers/DPMSHS';
+import BestOfsuperheroes from './superheroes/BestOfsuperheroes';
 
 const Home = ({ TestimonialsData, LatestReleasesData, popularshows, disney, superheroes }) => {
   return (

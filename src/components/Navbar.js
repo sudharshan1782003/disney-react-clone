@@ -1,5 +1,5 @@
 import React from 'react';
-import disneyLogo from "./disney logo/disney logo.svg";
+import disneyLogo from "../disney logo/disney logo.svg";
 import { MdClose, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiSearchLine } from "react-icons/ri";
@@ -9,8 +9,8 @@ import { PiFilmSlateBold } from "react-icons/pi";
 import { Link, matchPath, useLocation, useNavigate } from 'react-router-dom';
 import { MdMenu } from 'react-icons/md';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { UserAuth } from './UseContext';
-import useravatar from "./logos/avataruser.webp"
+import { UserAuth } from '../contextAPI/UseContext';
+import useravatar from "../logos/avataruser.webp"
 
 const Navbar = () => {
   const location = useLocation();
@@ -70,10 +70,8 @@ const styles2 =  {
       <nav className="hidden md:block">
         <ul className={`absolute left-1/2 -translate-x-1/2 pt-8 gap-6 flex cursor-pointer`}>
           <Link to="/login"><li className='flex flex-col items-center justify-center gap-2'><FaRegUserCircle className='text-gray-400 linkdiv' size={28} style={styles2} /><span className='links'>User</span></li></Link>
-          <Link to="/Search"><li><RiSearchLine className='text-gray-400 linkdiv' style={styles1} size={28} /><span className='links -ml-2'>Search</span></li></Link>
           <Link to="/"><li><GoHome className='text-gray-400 linkdiv' style={styles} size={28} /><span className='links -ml-2'>Home</span></li></Link>
-          <Link to="/Tv"><li><PiTelevisionSimpleBold className='text-gray-400 linkdiv' size={28} /><span className='links'>TV</span></li></Link>
-          <Link to="/Movies"><li><PiFilmSlateBold className='text-gray-400 linkdiv' size={28} /><span href='/' className='links -ml-2'>Movies</span></li></Link>
+          <Link to="/Search"><li><RiSearchLine className='text-gray-400 linkdiv' style={styles1} size={28} /><span className='links -ml-2'>Search</span></li></Link>
         </ul>
       </nav>
 
@@ -85,10 +83,9 @@ const styles2 =  {
         </div>
         <ul className={` flex flex-col cursor-pointer gap-5 absolute right-0 mr-20 rounded-sm text-white`} style={navshow}  >
           <Link to="/login"><li className='flex items-center justify-center gap-2 '><FaRegUserCircle className='text-gray-400 ' size={28} style={styles2} /><span className=''>User</span></li></Link>
-          <Link to="/Search"><li className='flex items-center justify-center gap-2'><RiSearchLine className='text-gray-400 ' style={styles1} size={28} /><span className=' '>Search</span></li></Link>
           <Link to="/"><li className='flex items-center justify-center gap-2 '><GoHome className='text-gray-400 linkdiv1' style={styles} size={28} /><span className=''>Home</span></li></Link>
-          <Link to="/Tv"><li className='flex items-center justify-center gap-2 mr-7'><PiTelevisionSimpleBold className='text-gray-400' size={28} /><span className=''>TV</span></li></Link>
-          <Link to="/Movies"><li className='flex items-center justify-center gap-2'><PiFilmSlateBold className='text-gray-400' size={28} /><span href='/' className=''>Movies</span></li></Link>
+          <Link to="/Search"><li className='flex items-center justify-center gap-2'><RiSearchLine className='text-gray-400 ' style={styles1} size={28} /><span className=' '>Search</span></li></Link>
+         
         </ul>
       </div>
 

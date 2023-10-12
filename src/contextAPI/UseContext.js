@@ -6,7 +6,7 @@ import {
     signInWithEmailAndPassword,
     signOut as firebaseSignOut
 } from "firebase/auth"
-import {auth} from "./UseAuth.js"
+import {auth} from "../config/UseAuth.js"
 
 
 const UseUsercontext= createContext();

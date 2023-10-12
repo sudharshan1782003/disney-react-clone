@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import playlogoblack from "./logos/play-icon-black.png"
-import playlogowhite from "./logos/play-icon-white.png"
-import watchlists from "./logos/watchlist-icon.svg"
-import { UserAuth } from './UseContext';
+import playlogoblack from "../../logos/play-icon-black.png"
+import playlogowhite from "../../logos/play-icon-white.png"
+import watchlists from "../../logos/watchlist-icon.svg"
+import { UserAuth } from '../../contextAPI/UseContext';
 
 const LatestReleasesPage = ({ LatestReleasesData }) => {
   const { id } = useParams();
@@ -18,10 +18,10 @@ const LatestReleasesPage = ({ LatestReleasesData }) => {
         item ? (
           <div className='md:pl-8 md:block flex flex-col   pt-12'>
             <video autoPlay loop  className='md:w-screen md:h-screen md:object-cover w-auto h-auto videos' >
-              <source src={item.videos} type='video/mp4' />
+              <source src={item.videos()} type='video/mp4' />
             </video>
            <div className='md:w-1/2  flex flex-col absolute md:top-48 top-24 md:ml-16 ml-2 md:gap-6 '>
-            <img src={item.dineyplusimage} className=' md:w-48 hidden ' />
+            <img src={item.dineyplusimage()} className=' md:w-48 hidden ' />
 
           <div className='flex pt-64 md:pt-5'>
         {

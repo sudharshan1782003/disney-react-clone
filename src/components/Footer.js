@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { FcCheckmark } from "react-icons/fc";
 import { LuFacebook } from "react-icons/lu";
 import { LuTwitter } from "react-icons/lu";
-import Playstore from "./disney logo/playstore.png"
-import Appstore from "./disney logo/appstore.png"
+import Playstore from "../disney logo/playstore.png"
+import Appstore from "../disney logo/appstore.png"
 const Footer = () => {
   return (
 <div className='md:grid md:grid-cols-3 pt-6'>

@@ -13,7 +13,7 @@ const DPMSHS = ({ disney }) => {
           onMouseLeave={() => setHoveredItemId(null)}
         >
           <img
-            src={item.img}
+            src={item.img()}
             className='w-full h-full object-cover'
             alt='Disney Image'
             style={{ position: 'relative', zIndex: 1 }}
@@ -21,7 +21,7 @@ const DPMSHS = ({ disney }) => {
           {hoveredItemId === item.id && (
             <div className='video-overlay absolute top-0 left-0 w-full h-full' style={{ zIndex: 0 }}>
               <video autoPlay loop controls={false} muted preload='auto' className='w-full h-full object-cover'>
-                <source src={item.video} type='video/mp4' />
+                <source src={item.video()} type='video/mp4' />
               </video>
             </div>
           )}

@@ -1,5 +1,4 @@
 import React from 'react'
-import playtrailer from "./movietrailers/goodnighttrialer.mp4"
 import { useParams } from 'react-router-dom'
 
 const PlayVideo = ({LatestReleasesData, popularshows, superheroes}) => {

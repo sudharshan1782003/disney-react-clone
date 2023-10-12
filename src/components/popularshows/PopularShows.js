@@ -21,7 +21,7 @@ const PopularShows = ({popularshows}) => {
                   
                      <div  className='hover:scale-105 md:w-full  max-[767px]:inline-block max-[767px]:pl-1'  key={item.id} >
                        <Link to={`popularshows/${item.id}`}>
-                        <img src={item.profile}  className=' hover:border-2 md:w-full w-40  hover:border-white rounded-md ' alt={item.id} />
+                        <img src={item.profile()}  className=' hover:border-2 md:w-full w-40  hover:border-white rounded-md ' alt={item.id} />
                         </Link>
                     </div>
                   

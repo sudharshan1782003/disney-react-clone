@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { signInWithPhoneNumber } from 'firebase/auth';
 import { getAuth } from 'firebase/auth';
-import {UserAuth} from "./UseContext.js"
+import {UserAuth} from "../../contextAPI/UseContext.js"
 
 const Login = () => {
 

@@ -18,7 +18,7 @@ const LatestReleases = ({LatestReleasesData}) => {
                 slicing.map(item => (
                     <div key={item.id} className='hover:scale-105 max-[767px]:inline-block max-[767px]:pl-1 hover:border-2 hover:border-white rounded-md'>
                         <Link to={`/latestreleases/${item.id}`}>
-                        <img src={item.profile} className='md:w-full w-40  rounded-md' />
+                        <img src={item.profile()} className='md:w-full w-40  rounded-md' />
                     </Link>
                     </div>
                )

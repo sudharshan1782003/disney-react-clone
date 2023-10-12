@@ -8,7 +8,7 @@ const PopularShowsAll = ({popularshowsall}) => {
              {   popularshowsall.map(item => (
                     <div key={item.id} className='hover:scale-105  hover:border-2 hover:border-white rounded-md'>
                         <Link to={`/popularshows/${item.id}`}>
-                        <img src={item.profile} className=' rounded-md' />
+                        <img src={item.profile()} className=' rounded-md' />
                     </Link>
                     </div>
                 ))

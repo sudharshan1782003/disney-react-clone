@@ -24,7 +24,7 @@ const Search = ({ search, setsearch, searchResults }) => {
             {searchResults.map(item => (
               <div key={item.id} className='hover:scale-105   hover:border-2 hover:border-white rounded-md '>
                 <Link to={`/${item.special}/${item.id}`}>
-                  <img src={item.profile} className='rounded-md w-auto h-auto' />
+                  <img src={item.profile()} className='rounded-md w-auto h-auto' />
                 </Link>
               </div>
             ))}

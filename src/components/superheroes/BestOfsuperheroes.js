@@ -14,7 +14,7 @@ const BestOfsuperheroes = ({superheroes}) => {
                   
                      <div  className='hover:scale-105 max-[767px]:inline-block max-[767px]:pl-1' key={item.id} >
                        <Link to={`/superheroes/${item.id}`}>
-                        <img src={item.profile}  className='md:w-full w-40 hover:border-2 hover:border-white rounded-md ' alt={item.id} />
+                        <img src={item.profile()}  className='md:w-full w-40 hover:border-2 hover:border-white rounded-md ' alt={item.id} />
                         </Link>
                     </div>
                   

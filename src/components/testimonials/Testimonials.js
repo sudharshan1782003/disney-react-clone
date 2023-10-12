@@ -43,7 +43,7 @@ const Testimonials = ({ TestimonialsData }) => {
               className={`${testimonial.id} img-testimonials cursor-pointer rounded-sm transition-opacity text-white textcenter absolute top-56 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                 index === activeIndex ? 'opacity-100 z-10' : 'opacity-0'
               }`}
-              src={testimonial.image}
+              src={testimonial.image()}
               alt={`Testimonial ${testimonial.id}`}
             />
           </div>
@@ -70,3 +70,21 @@ const Testimonials = ({ TestimonialsData }) => {
 };
 
 export default Testimonials;
+
+/*   <div className="w-full h-96 overflow-hidden relative">
+      <div className="flex space-x-4 transition-transform duration-300 ease-in-out transform translate-x-[-20%]">
+        {imagesToShow.map((image, index) => (
+          <div key={index} className="w-1/5 h-full">
+            <img src={image} alt={`Image ${index + startIndex + 1}`} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
+      {startIndex < images.length - 5 && (
+        <button
+          onClick={handleNextClick}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2 rounded-full"
+        >
+          Next
+        </button>
+      )}
+    </div>*/

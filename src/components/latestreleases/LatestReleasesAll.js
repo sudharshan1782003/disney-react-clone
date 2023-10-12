@@ -8,7 +8,7 @@ const LatestReleasesAll = ({ LatestReleasesData}) => {
                 LatestReleasesData.map(item => (
                     <div key={item.id} className='hover:scale-105  hover:border-2 hover:border-white rounded-md'>
                         <Link to={`/latestreleases/${item.id}`}>
-                        <img src={item.profile} className='md:w-full w-auto rounded-md' />
+                        <img src={item.profile()} className='md:w-full w-auto rounded-md' />
                     </Link>
                     </div>
                 ))
